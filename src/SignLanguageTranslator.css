@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7ede2; /* Earth tone background */
+}
+
+.translator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Menggunakan tinggi layar penuh */
+  width: 100vw; /* Menggunakan lebar layar penuh */
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f7ede2; /* Warna latar belakang */
+  color: #4f3826; /* Warna teks */
+}
+
+.translator-title {
+  font-size: 3rem; /* Ukuran font judul lebih besar */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.translator-description {
+  font-size: 1.5rem; /* Deskripsi lebih besar */
+  margin-bottom: 2rem;
+}
+
+.file-input {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.translate-button {
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  background-color: #b08968; /* Earth tone untuk tombol */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.translate-button:disabled {
+  background-color: #d3c0a8; /* Warna tombol saat tidak aktif */
+  cursor: not-allowed;
+}
+
+.translate-button:hover:not(:disabled) {
+  background-color: #9c6f53; /* Warna tombol saat hover */
+}
+
+.translation-result {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.translation-result h2 {
+  font-size: 1.8rem; /* Ukuran font hasil terjemahan */
+  margin-bottom: 0.5rem;
+}
+
+.translation-result p {
+  font-size: 1.2rem;
+}
